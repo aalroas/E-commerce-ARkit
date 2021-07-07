@@ -13,6 +13,11 @@
 		730410312650386D00325548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7304102F2650386D00325548 /* Main.storyboard */; };
 		730410332650387000325548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730410322650387000325548 /* Assets.xcassets */; };
 		730410362650387000325548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730410342650387000325548 /* LaunchScreen.storyboard */; };
+		7325870B2691F8620084D263 /* UserDefault+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325870A2691F8620084D263 /* UserDefault+Extension.swift */; };
+		7325870D2691F8B80084D263 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325870C2691F8B80084D263 /* Helper.swift */; };
+		7325870F2692095B0084D263 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325870E2692095B0084D263 /* ProductCell.swift */; };
+		73258711269215060084D263 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73258710269215060084D263 /* OrderCell.swift */; };
+		73258713269215AC0084D263 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73258712269215AC0084D263 /* OrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		730410322650387000325548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		730410352650387000325548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		730410372650387000325548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7325870A2691F8620084D263 /* UserDefault+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Extension.swift"; sourceTree = "<group>"; };
+		7325870C2691F8B80084D263 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		7325870E2692095B0084D263 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		73258710269215060084D263 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		73258712269215AC0084D263 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		730410282650386D00325548 /* gproject-ios */ = {
 			isa = PBXGroup;
 			children = (
-				730410292650386D00325548 /* AppDelegate.swift */,
-				7304102B2650386D00325548 /* SceneDelegate.swift */,
-				7304102D2650386D00325548 /* ViewController.swift */,
-				7304102F2650386D00325548 /* Main.storyboard */,
-				730410322650387000325548 /* Assets.xcassets */,
-				730410342650387000325548 /* LaunchScreen.storyboard */,
-				730410372650387000325548 /* Info.plist */,
+				732587092691F84A0084D263 /* Extensions */,
+				732587082691F8430084D263 /* Storyboards */,
+				732587072691F83D0084D263 /* Resources */,
+				732587062691F8350084D263 /* Helpers */,
+				732587052691F8110084D263 /* View Controllers */,
 			);
 			path = "gproject-ios";
+			sourceTree = "<group>";
+		};
+		732587052691F8110084D263 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				730410292650386D00325548 /* AppDelegate.swift */,
+				7304102D2650386D00325548 /* ViewController.swift */,
+				73258712269215AC0084D263 /* OrderViewController.swift */,
+				7304102B2650386D00325548 /* SceneDelegate.swift */,
+				7325870E2692095B0084D263 /* ProductCell.swift */,
+				73258710269215060084D263 /* OrderCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		732587062691F8350084D263 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7325870C2691F8B80084D263 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		732587072691F83D0084D263 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				730410322650387000325548 /* Assets.xcassets */,
+				730410372650387000325548 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		732587082691F8430084D263 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				730410342650387000325548 /* LaunchScreen.storyboard */,
+				7304102F2650386D00325548 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		732587092691F84A0084D263 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7325870A2691F8620084D263 /* UserDefault+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +194,12 @@
 			files = (
 				7304102E2650386D00325548 /* ViewController.swift in Sources */,
 				7304102A2650386D00325548 /* AppDelegate.swift in Sources */,
+				73258711269215060084D263 /* OrderCell.swift in Sources */,
+				7325870D2691F8B80084D263 /* Helper.swift in Sources */,
+				7325870B2691F8620084D263 /* UserDefault+Extension.swift in Sources */,
 				7304102C2650386D00325548 /* SceneDelegate.swift in Sources */,
+				7325870F2692095B0084D263 /* ProductCell.swift in Sources */,
+				73258713269215AC0084D263 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,12 +348,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4DMJLQZ5N5;
-				INFOPLIST_FILE = "gproject-ios/Info.plist";
+				INFOPLIST_FILE = "gproject-ios/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kodatik.gproject-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kodatik.graduation-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,12 +367,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4DMJLQZ5N5;
-				INFOPLIST_FILE = "gproject-ios/Info.plist";
+				INFOPLIST_FILE = "gproject-ios/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kodatik.gproject-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kodatik.graduation-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
