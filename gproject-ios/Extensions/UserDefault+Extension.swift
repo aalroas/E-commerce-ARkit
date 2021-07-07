@@ -34,6 +34,14 @@ extension UserDefaults {
             string(forKey: #function)
         }
     }
+    var userEmail: String? {
+        set {
+            setValue(newValue, forKey: #function)
+        }
+        get {
+            string(forKey: #function)
+        }
+    }
     
     
     

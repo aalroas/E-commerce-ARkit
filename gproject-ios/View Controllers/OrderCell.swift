@@ -12,4 +12,6 @@ class OrderCell: UITableViewCell {
     @IBOutlet weak var orderImageView: UIImageView!
     @IBOutlet weak var orderNameLabel: UILabel!
     @IBOutlet weak var orderPriceLabel: UILabel!
+    @IBOutlet weak var qtyLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
 }
